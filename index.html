@@ -1,353 +1,341 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Faizan Khan — Software Engineer (Backend)</title>
-  <meta name="description" content="Faizan Khan — Java Backend Engineer. Spring Boot, PostgreSQL, microservices, SQL performance tuning." />
-  <meta name="theme-color" content="#0e1726" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Faizan Khan",
-    "jobTitle": "Software Engineer",
-    "address": {"@type":"PostalAddress","addressLocality":"Lahore","addressCountry":"PK"},
-    "email": "mailto:faizan45454@gmail.com",
-    "sameAs": ["https://linkedin.com/in/mkhan2411","https://github.com/faizankhanbaloch"]
-  }
-  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Faizan Khan — Backend Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
 </head>
-
 <body>
-  <a class="skip" href="#content">Skip to content</a>
 
-  <header class="mobilebar" aria-label="Mobile header">
-    <div class="mobilebar__inner">
-      <div class="mobilebar__brand">
-        <span class="badge" aria-hidden="true">FK</span>
-        <div>
-          <div class="mobilebar__name">Faizan Khan</div>
-          <div class="mobilebar__role">Java Backend Engineer</div>
-        </div>
-      </div>
-      <button class="iconbtn" id="menuBtn" type="button" aria-label="Open menu">☰</button>
+  <!-- Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <!-- Noise overlay -->
+  <div class="noise"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">FK<span class="blink">_</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">about</a></li>
+      <li><a href="#experience">experience</a></li>
+      <li><a href="#skills">skills</a></li>
+      <li><a href="#projects">projects</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="Faizan_Khan.pdf" download="Faizan_Khan_Resume.pdf" class="btn-resume-nav">↓ Resume</a>
+      <div class="nav-status"><span class="dot"></span>available</div>
     </div>
-  </header>
+  </nav>
 
-  <div class="layout">
-    <!-- SIDEBAR -->
-    <aside class="sidebar" id="sidebar" aria-label="Sidebar">
-      <div class="sidebar__top">
-        <div class="idblock">
-          <div class="idblock__mark" aria-hidden="true">FK</div>
-          <div>
-            <div class="idblock__name">Faizan Khan</div>
-            <div class="idblock__role">Software Engineer • Java Backend</div>
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-content">
+      <div class="hero-tag">[ Software Engineer · Backend · 4+ years ]</div>
+      <h1 class="hero-name">
+        <span class="line" data-text="FAIZAN">FAIZAN</span>
+        <span class="line accent-line" data-text="KHAN">KHAN</span>
+      </h1>
+      <p class="hero-sub">Architecting scalable backend systems<br>for fintech and enterprise platforms.</p>
+      <div class="hero-cta">
+        <a href="#experience" class="btn-primary">View Work</a>
+        <a href="https://github.com/faizankhanbaloch" target="_blank" class="btn-ghost">GitHub ↗</a>
+        <a href="Faizan_Khan.pdf" download="Faizan_Khan_Resume.pdf" class="btn-resume">↓ Resume</a>
+      </div>
+    </div>
+    <div class="hero-terminal">
+      <div class="terminal-bar">
+        <span class="t-dot red"></span><span class="t-dot yellow"></span><span class="t-dot green"></span>
+        <span class="t-title">faizan@backend:~$</span>
+      </div>
+      <div class="terminal-body" id="terminalBody"></div>
+    </div>
+    <div class="hero-scroll">scroll ↓</div>
+  </section>
+
+  <!-- About -->
+  <section class="about section" id="about">
+    <div class="section-label">01 / about</div>
+    <div class="about-grid">
+      <div class="about-text">
+        <h2 class="section-heading">Results-driven<br><em>backend engineer</em></h2>
+        <p>I build the systems that power fintech and enterprise platforms — from high-throughput settlement processors to AI-driven engineering automation. Clean architecture, performance obsession, and reliability at scale.</p>
+        <p>Currently engineering backend modules at <strong>SOCO Engineers GmbH</strong> for SIMUSPACE, an adaptive intelligence platform serving automotive, aerospace, and defense sectors.</p>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-num" data-target="4">0</span><span>+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-target="40">0</span><span>%</span>
+            <span class="stat-label">Query Time Reduced</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-target="2023">0</span>
+            <span class="stat-label">Performance Award</span>
           </div>
         </div>
+      </div>
+      <div class="about-visual">
+        <div class="code-card">
+          <div class="code-header">Engineer.java</div>
+          <pre class="code-block"><code><span class="kw">public class</span> <span class="cn">FaizanKhan</span> {
 
-        <p class="summary">
-          Results-driven backend engineer with 4+ years building scalable enterprise and fintech systems using
-          Spring Boot, REST APIs, and PostgreSQL performance tuning.
-        </p>
+  <span class="kw">private</span> String location = <span class="str">"Lahore, PK"</span>;
+  <span class="kw">private</span> String[] stack = {
+    <span class="str">"Java"</span>, <span class="str">"Spring Boot"</span>,
+    <span class="str">"PostgreSQL"</span>, <span class="str">"Docker"</span>,
+    <span class="str">"Microservices"</span>
+  };
 
-        <div class="sidebar__cta">
-          <a class="btn btn--primary" href="assets/files/Faizan_Khan.pdf" target="_blank" rel="noreferrer">Download Resume</a>
-          <a class="btn btn--ghost" href="#contact">Contact</a>
+  <span class="kw">public</span> String getStatus() {
+    <span class="kw">return</span> <span class="str">"Available for projects"</span>;
+  }
+
+  <span class="kw">public</span> String[] getPassion() {
+    <span class="kw">return new</span> String[]{
+      <span class="str">"High-performance systems"</span>,
+      <span class="str">"Clean architecture"</span>,
+      <span class="str">"Problem solving"</span>
+    };
+  }
+}</code></pre>
         </div>
+      </div>
+    </div>
+  </section>
 
-        <div class="divider"></div>
+  <!-- Experience -->
+  <section class="experience section" id="experience">
+    <div class="section-label">02 / experience</div>
+    <h2 class="section-heading">Work <em>History</em></h2>
+    <div class="timeline">
 
-        <ul class="kv" aria-label="Quick facts">
-          <li><span class="k">Location</span><span class="v">Lahore, Pakistan</span></li>
-          <li><span class="k">Email</span><a class="v" href="mailto:faizan45454@gmail.com">faizan45454@gmail.com</a></li>
-          <li><span class="k">Phone</span><a class="v" href="tel:+923084098206">+92 308 4098206</a></li>
-          <li><span class="k">LinkedIn</span><a class="v" href="https://linkedin.com/in/mkhan2411" target="_blank" rel="noreferrer">mkhan2411</a></li>
-          <li><span class="k">GitHub</span><a class="v" href="https://github.com/faizankhanbaloch" target="_blank" rel="noreferrer">faizankhanbaloch</a></li>
-        </ul>
-
-        <div class="divider"></div>
-
-        <nav class="snav" aria-label="Section navigation">
-          <a href="#about">About</a>
-          <a href="#experience">Experience</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#education">Education</a>
-          <a href="#contact">Contact</a>
-        </nav>
-
-        <p class="muted tiny privacy">
-          Tip: If you prefer privacy, replace your phone number with “Available on request”.
-        </p>
+      <div class="timeline-item" data-index="0">
+        <div class="timeline-marker">
+          <div class="marker-ring"></div>
+          <div class="marker-dot"></div>
+        </div>
+        <div class="timeline-card">
+          <div class="card-header">
+            <div>
+              <div class="card-role">Software Engineer</div>
+              <div class="card-company">SOCO Engineers GmbH</div>
+            </div>
+            <div class="card-period">03/2025 – Present</div>
+          </div>
+          <div class="card-tags">
+            <span>Java</span><span>Spring Boot</span><span>PostgreSQL</span><span>Elastic</span>
+          </div>
+          <p class="card-desc">Contributed to SIMUSPACE — an adaptive intelligence platform automating engineering workflows and enabling AI-driven optimization across automotive, aerospace, and defense sectors.</p>
+          <ul class="card-bullets">
+            <li>Developed backend modules ensuring data integration and secure APIs</li>
+            <li>Enhanced workflow automation with version control and real-time data pipelines</li>
+            <li>Built scalable services for AI-driven engineering analysis</li>
+          </ul>
+          <div class="card-sector">Sector: Engineering / AI Automation</div>
+        </div>
       </div>
 
-      <footer class="sidebar__footer">
-        <div class="muted tiny">© <span id="year"></span> Faizan Khan</div>
-      </footer>
-    </aside>
-
-    <!-- MAIN -->
-    <main class="main" id="content">
-      <section class="hero card">
-        <div class="hero__top">
-          <div>
-            <p class="eyebrow">Backend Engineering • Microservices • Databases</p>
-            <h1>Faizan Khan</h1>
-            <p class="lead">
-              I build reliable backend services for enterprise and fintech products.
-              Strong in API design, SQL optimization, and production-grade delivery.
-            </p>
+      <div class="timeline-item" data-index="1">
+        <div class="timeline-marker">
+          <div class="marker-ring"></div>
+          <div class="marker-dot"></div>
+        </div>
+        <div class="timeline-card">
+          <div class="card-header">
+            <div>
+              <div class="card-role">Software Engineer</div>
+              <div class="card-company">i2c Inc. <span class="fintech-badge">Fintech</span></div>
+            </div>
+            <div class="card-period">07/2022 – 02/2025</div>
           </div>
+          <div class="card-tags">
+            <span>Java</span><span>SQL</span><span>Multithreading</span><span>Microservices</span>
+          </div>
+          <p class="card-desc">Led development of critical financial systems including settlement reporting, payment gateway, account statements, and fee processors for a global fintech platform.</p>
+          <ul class="card-bullets">
+            <li>Optimized large-scale databases for high availability and performance</li>
+            <li>Reduced system load via advanced SQL query tuning</li>
+            <li>Applied multithreading to enhance reporting and transaction speeds</li>
+            <li>Delivered secure, compliant financial modules aligned with global standards</li>
+            <li>Implemented data validation, migration, and integrity checks</li>
+          </ul>
+          <div class="card-sector">🏆 Outstanding Performance Award 2023</div>
+        </div>
+      </div>
 
-          <div class="hero__actions">
-            <a class="btn btn--primary" href="#projects">View Work</a>
-            <a class="btn btn--ghost" href="assets/files/Faizan_Khan.pdf" target="_blank" rel="noreferrer">Resume</a>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="skills section" id="skills">
+    <div class="section-label">03 / skills</div>
+    <h2 class="section-heading">Technical <em>Arsenal</em></h2>
+    <div class="skills-grid">
+
+      <div class="skill-category">
+        <div class="skill-cat-label">// Languages</div>
+        <div class="skill-bars">
+          <div class="skill-bar" data-level="95"><span>Java</span><div class="bar-track"><div class="bar-fill"></div></div><span class="pct">95%</span></div>
+          <div class="skill-bar" data-level="80"><span>SQL</span><div class="bar-track"><div class="bar-fill"></div></div><span class="pct">80%</span></div>
+          <div class="skill-bar" data-level="65"><span>Python</span><div class="bar-track"><div class="bar-fill"></div></div><span class="pct">65%</span></div>
+          <div class="skill-bar" data-level="60"><span>C++</span><div class="bar-track"><div class="bar-fill"></div></div><span class="pct">60%</span></div>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <div class="skill-cat-label">// Frameworks</div>
+        <div class="skill-bubbles">
+          <span class="bubble">Spring Boot</span>
+          <span class="bubble">Hibernate</span>
+          <span class="bubble">JPA</span>
+          <span class="bubble">Spring Security</span>
+          <span class="bubble">REST APIs</span>
+          <span class="bubble">Docker</span>
+          <span class="bubble">Django</span>
+          <span class="bubble">JUnit</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <div class="skill-cat-label">// Databases</div>
+        <div class="db-cards">
+          <div class="db-card">
+            <div class="db-icon">🐘</div>
+            <div>PostgreSQL</div>
+            <div class="db-level">Expert</div>
+          </div>
+          <div class="db-card">
+            <div class="db-icon">🐬</div>
+            <div>MySQL</div>
+            <div class="db-level">Advanced</div>
+          </div>
+          <div class="db-card">
+            <div class="db-icon">🗄️</div>
+            <div>Informix DB</div>
+            <div class="db-level">Proficient</div>
           </div>
         </div>
+      </div>
 
-        <div class="hero__highlights">
-          <div class="pill"><span class="pill__k">Primary</span><span class="pill__v">Java • Spring Boot</span></div>
-          <div class="pill"><span class="pill__k">Data</span><span class="pill__v">PostgreSQL • MySQL</span></div>
-          <div class="pill"><span class="pill__k">Practice</span><span class="pill__v">SQL tuning • Clean code</span></div>
-          <div class="pill"><span class="pill__k">Domains</span><span class="pill__v">Fintech • Engineering workflows</span></div>
+      <div class="skill-category">
+        <div class="skill-cat-label">// Tools & Other</div>
+        <div class="tool-list">
+          <div class="tool-item"><span class="tool-icon">⚙</span>Git / SVN</div>
+          <div class="tool-item"><span class="tool-icon">⚙</span>Multithreading</div>
+          <div class="tool-item"><span class="tool-icon">⚙</span>Microservices</div>
+          <div class="tool-item"><span class="tool-icon">⚙</span>Web Services</div>
+          <div class="tool-item"><span class="tool-icon">⚙</span>Elasticsearch</div>
+          <div class="tool-item"><span class="tool-icon">⚙</span>Docker</div>
         </div>
-      </section>
+      </div>
 
-      <section class="section">
-        <div class="section__head" id="about">
-          <h2>About</h2>
-          <p>
-            I focus on backend systems that are secure, scalable, and easy to maintain—built with strong fundamentals:
-            data integrity, performance, and robust engineering practices.
-          </p>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="projects section" id="projects">
+    <div class="section-label">04 / projects</div>
+    <h2 class="section-heading">Notable <em>Work</em></h2>
+    <div class="projects-grid">
+
+      <div class="project-card" data-index="0">
+        <div class="project-number">01</div>
+        <div class="project-content">
+          <h3>SSRP</h3>
+          <div class="project-subtitle">Settlement Reporting Processor</div>
+          <p>Optimized financial settlement reporting system that dramatically reduced query execution time, improving overall reporting efficiency for a global fintech platform.</p>
+          <div class="project-impact">
+            <div class="impact-stat"><span>40%</span> Query Time Reduction</div>
+          </div>
+          <div class="project-tech">
+            <span>Java</span><span>SQL Tuning</span><span>PostgreSQL</span><span>Multithreading</span>
+          </div>
         </div>
+        <div class="project-arrow">→</div>
+      </div>
 
-        <div class="grid grid--2">
-          <article class="card">
-            <h3>What I do</h3>
-            <ul class="bullets">
-              <li>Design and implement RESTful services and microservices using Spring Boot.</li>
-              <li>Optimize database performance (indexes, execution plans, query tuning).</li>
-              <li>Build reliable processors (settlement reporting, fees, statements).</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <h3>How I work</h3>
-            <ul class="bullets">
-              <li>Production-first mindset: observability, edge cases, and failure modes.</li>
-              <li>Readable code: consistent patterns, clean APIs, and pragmatic testing.</li>
-              <li>Performance as a feature: measure, tune, and validate improvements.</li>
-            </ul>
-          </article>
+      <div class="project-card" data-index="1">
+        <div class="project-number">02</div>
+        <div class="project-content">
+          <h3>JCart</h3>
+          <div class="project-subtitle">E-Commerce Backend Platform</div>
+          <p>Built complete database architecture and backend for an e-commerce store. Implemented query optimization, secure data handling, and encryption for user and transaction data.</p>
+          <div class="project-impact">
+            <div class="impact-stat"><span>Full Stack</span> Backend Architecture</div>
+          </div>
+          <div class="project-tech">
+            <span>Java</span><span>Spring Boot</span><span>MySQL</span><span>Encryption</span>
+          </div>
         </div>
-      </section>
+        <div class="project-arrow">→</div>
+      </div>
 
-      <section class="section" id="experience">
-        <div class="section__head">
-          <h2>Experience</h2>
-          <p>Roles and measurable outcomes.</p>
+      <div class="project-card" data-index="2">
+        <div class="project-number">03</div>
+        <div class="project-content">
+          <h3>SIMUSPACE</h3>
+          <div class="project-subtitle">AI Engineering Automation Platform</div>
+          <p>Backend modules for an adaptive intelligence platform used across automotive, aerospace, and defense. Includes real-time data integration, secure APIs, and workflow automation.</p>
+          <div class="project-impact">
+            <div class="impact-stat"><span>3</span> Industry Sectors</div>
+          </div>
+          <div class="project-tech">
+            <span>Java</span><span>Spring Boot</span><span>Elasticsearch</span><span>PostgreSQL</span>
+          </div>
         </div>
+        <div class="project-arrow">→</div>
+      </div>
 
-        <div class="timeline">
-          <article class="card titem">
-            <div class="titem__row">
-              <div>
-                <h3>Software Engineer — SOCO Engineers GmbH</h3>
-                <p class="muted">SIMUSPACE • Automated engineering workflows</p>
-              </div>
-              <div class="titem__meta">
-                <div class="tag">Mar 2025 — Present</div>
-              </div>
-            </div>
-            <ul class="bullets">
-              <li>Developed backend modules using Java, Spring Boot, PostgreSQL, and Elastic.</li>
-              <li>Built secure APIs and strengthened data integration and version control flows.</li>
-              <li>Enabled workflow automation across automotive, aerospace, and defense use cases.</li>
-            </ul>
-            <div class="chips">
-              <span class="chip">Java</span><span class="chip">Spring Boot</span><span class="chip">PostgreSQL</span><span class="chip">Elastic</span>
-            </div>
-          </article>
+    </div>
+  </section>
 
-          <article class="card titem">
-            <div class="titem__row">
-              <div>
-                <h3>Software Engineer — i2c Inc. (Fintech)</h3>
-                <p class="muted">Payments • Settlement reporting • Processing systems</p>
-              </div>
-              <div class="titem__meta">
-                <div class="tag">Jul 2022 — Feb 2025</div>
-                <div class="tag tag--soft">Outstanding Performance (2023)</div>
-              </div>
-            </div>
-            <ul class="bullets">
-              <li>Led development of settlement reporting, payment gateway, account statement, and fee processors.</li>
-              <li>Optimized high-volume databases; reduced system load via SQL tuning and data integrity improvements.</li>
-              <li>Applied multithreading to improve reporting and transaction throughput.</li>
-              <li>Implemented data validation, migration, and integrity checks across systems.</li>
-              <li>Delivered secure modules aligned with global financial standards.</li>
-            </ul>
-            <div class="chips">
-              <span class="chip">Java</span><span class="chip">SQL</span><span class="chip">PostgreSQL</span><span class="chip">Multithreading</span>
-            </div>
-          </article>
-        </div>
-      </section>
+  <!-- Contact -->
+  <section class="contact section" id="contact">
+    <div class="section-label">05 / contact</div>
+    <div class="contact-inner">
+      <h2 class="section-heading">Let's <em>Connect</em></h2>
+      <p class="contact-sub">Open to new opportunities, collaborations, and interesting backend challenges.</p>
+      <div class="contact-links">
+        <a href="mailto:faizan45454@gmail.com" class="contact-link">
+          <span class="link-icon">✉</span>
+          <span>faizan45454@gmail.com</span>
+          <span class="link-arr">↗</span>
+        </a>
+        <a href="https://linkedin.com/in/mkhan2411" target="_blank" class="contact-link">
+          <span class="link-icon">in</span>
+          <span>linkedin.com/in/mkhan2411</span>
+          <span class="link-arr">↗</span>
+        </a>
+        <a href="https://github.com/faizankhanbaloch" target="_blank" class="contact-link">
+          <span class="link-icon">gh</span>
+          <span>github.com/faizankhanbaloch</span>
+          <span class="link-arr">↗</span>
+        </a>
+        <a href="tel:+923084098206" class="contact-link">
+          <span class="link-icon">☎</span>
+          <span>+92 308 4098206</span>
+          <span class="link-arr">↗</span>
+        </a>
+      </div>
+      <div class="contact-location">📍 Lahore, Pakistan</div>
+    </div>
+  </section>
 
-      <section class="section" id="skills">
-        <div class="section__head">
-          <h2>Skills</h2>
-          <p>Core tools and technologies.</p>
-        </div>
+  <!-- Footer -->
+  <footer class="footer">
+    <div>Faizan Khan © 2025</div>
+    <div class="footer-stack">Built with HTML · CSS · JS</div>
+  </footer>
 
-        <div class="grid grid--2">
-          <article class="card">
-            <h3>Languages</h3>
-            <div class="chips">
-              <span class="chip">Java</span><span class="chip">SQL</span><span class="chip">Python</span>
-              <span class="chip">C++</span><span class="chip">C</span><span class="chip">HTML</span><span class="chip">CSS</span>
-            </div>
-          </article>
-
-          <article class="card">
-            <h3>Frameworks & Tools</h3>
-            <div class="chips">
-              <span class="chip">Spring Boot</span><span class="chip">Hibernate</span><span class="chip">JPA</span>
-              <span class="chip">Spring Security</span><span class="chip">REST APIs</span><span class="chip">Docker</span>
-              <span class="chip">Django</span><span class="chip">JUnit</span>
-            </div>
-          </article>
-
-          <article class="card">
-            <h3>Databases</h3>
-            <div class="chips">
-              <span class="chip">PostgreSQL</span><span class="chip">MySQL</span><span class="chip">Informix DB</span>
-            </div>
-          </article>
-
-          <article class="card">
-            <h3>Engineering</h3>
-            <div class="chips">
-              <span class="chip">Microservices</span><span class="chip">SQL tuning</span><span class="chip">Data integrity</span>
-              <span class="chip">Multithreading</span><span class="chip">Web services</span><span class="chip">Git</span><span class="chip">SVN</span>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="section" id="projects">
-        <div class="section__head">
-          <h2>Projects</h2>
-          <p>Selected highlights with outcomes.</p>
-        </div>
-
-        <div class="grid grid--2">
-          <article class="card">
-            <div class="proj__row">
-              <h3>SSRP — Settlement Reporting Processor</h3>
-              <span class="tag">Fintech</span>
-            </div>
-            <p class="muted">
-              Improved reporting performance and reduced query time by ~40% through SQL tuning and execution plan optimization.
-            </p>
-            <ul class="bullets">
-              <li>Identified bottlenecks and refactored key queries and data access paths.</li>
-              <li>Improved throughput and reliability for high-volume reporting workflows.</li>
-            </ul>
-          </article>
-
-          <article class="card">
-            <div class="proj__row">
-              <h3>JCart — E-commerce Backend & Database</h3>
-              <span class="tag">Backend</span>
-            </div>
-            <p class="muted">
-              Built backend and database design for an e-commerce store with secure data handling and optimization practices.
-            </p>
-            <ul class="bullets">
-              <li>Designed schema and implemented query optimization practices.</li>
-              <li>Improved security posture for customer and order data.</li>
-            </ul>
-          </article>
-        </div>
-      </section>
-
-      <section class="section" id="education">
-        <div class="section__head">
-          <h2>Education</h2>
-          <p>Academic background.</p>
-        </div>
-
-        <div class="grid grid--2">
-          <article class="card">
-            <h3>B.S. Computer Science</h3>
-            <p class="muted">FAST NUCES Lahore • 2018 — 2022</p>
-          </article>
-          <article class="card">
-            <h3>F.Sc. & Matriculation</h3>
-            <p class="muted">Muslim College of Science and Commerce (2016–2018) • Muslim Public H.S. School (2014–2016)</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section" id="contact">
-        <div class="section__head">
-          <h2>Contact</h2>
-          <p>Open to backend engineering roles and challenging work.</p>
-        </div>
-
-        <div class="grid grid--2">
-          <article class="card">
-            <h3>Get in touch</h3>
-            <p class="muted">Email is best for first contact.</p>
-            <div class="actions">
-              <a class="btn btn--primary" href="mailto:faizan45454@gmail.com">Email</a>
-              <a class="btn btn--ghost" href="https://linkedin.com/in/mkhan2411" target="_blank" rel="noreferrer">LinkedIn</a>
-              <a class="btn btn--ghost" href="assets/files/Faizan_Khan.pdf" target="_blank" rel="noreferrer">Resume PDF</a>
-            </div>
-
-            <div class="divider"></div>
-
-            <p class="muted tiny">Prefer a call? Send an email and I’ll share availability.</p>
-          </article>
-
-          <form class="card" onsubmit="return false" aria-label="Quick note">
-            <h3>Quick note</h3>
-            <p class="muted">This won’t send (static site). It helps you copy a message quickly.</p>
-
-            <label class="field">
-              <span>Your name</span>
-              <input id="name" type="text" placeholder="Name" autocomplete="name" />
-            </label>
-
-            <label class="field">
-              <span>Message</span>
-              <textarea id="msg" rows="5" placeholder="Hi Faizan, I’d like to discuss..."></textarea>
-            </label>
-
-            <button class="btn btn--primary" type="button" id="copyBtn">Copy message</button>
-            <div class="muted tiny" id="copyStatus" role="status" aria-live="polite"></div>
-          </form>
-        </div>
-      </section>
-
-      <footer class="main__footer">
-        <div class="muted tiny">Built for GitHub Pages • Static HTML/CSS/JS</div>
-      </footer>
-    </main>
-  </div>
-
-  <script src="assets/js/main.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
